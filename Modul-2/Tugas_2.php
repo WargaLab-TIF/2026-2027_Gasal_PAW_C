@@ -12,25 +12,25 @@ $PAW = "PAW";
 foreach ($matkul as $alias) {
     switch ($alias) {
         case $PTI:
-            echo "Saya suka " . $PTI . PHP_EOL;
+            echo "Saya suka " . $PTI . "<br>";
             break;
         case $ALPRO:
-            echo "Saya suka " . $ALPRO . PHP_EOL;
+            echo "Saya suka " . $ALPRO . "<br>";
             break;
         case $DPW:
-            echo "Saya suka " . $DPW . PHP_EOL;
+            echo "Saya suka " . $DPW . "<br>";
             break;
         case $STRUKDAT:
-            echo "Saya suka " . $STRUKDAT . PHP_EOL;
+            echo "Saya suka " . $STRUKDAT . "<br>";
             break;
         case $JARKOM:
-            echo "Saya suka " . $JARKOM . PHP_EOL;
+            echo "Saya suka " . $JARKOM . "<br>";
             break;
         case $PAW:
-            echo "Saya suka " . $PAW . PHP_EOL;
+            echo "Saya suka " . $PAW . "<br>";
             break;
         default:
-            echo "Saya tidak mengambil matkul " . $alias . PHP_EOL;
+            echo "Saya tidak mengambil matkul " . $alias . "<br>";
             break;
     }
 }

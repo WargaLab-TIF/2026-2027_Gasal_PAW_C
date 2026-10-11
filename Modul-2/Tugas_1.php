@@ -14,10 +14,10 @@ for ($i = 0; $i < count($matkul); $i++) {
     }
 
     if ($adaPraktikum) {
-        echo "Saya sedang mengambil matkul " . $matkul[$i] . " termasuk praktikumnya" . PHP_EOL;
+        echo "Saya sedang mengambil matkul " . $matkul[$i] . " termasuk praktikumnya" . "<br>";
     } elseif ($i == 6 || $i == 7) {
-        echo "Saya belum mengambil matkul " . $matkul[$i] . " semester lalu" . PHP_EOL;
+        echo "Saya belum mengambil matkul " . $matkul[$i] . " semester lalu" . "<br>";
     } else {
-        echo "Saya sedang mengambil matkul " . $matkul[$i] . PHP_EOL;
+        echo "Saya sedang mengambil matkul " . $matkul[$i] . "<br>";
     }
 }
