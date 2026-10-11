@@ -27,4 +27,4 @@ foreach($students as $s) {
     echo "</tr>";
 }
 echo "</table>";
-?>
+?> 

@@ -27,4 +27,4 @@ echo implode(", ", $temp) . ")<br>";
 
 $LastValue = end($height);
 echo "Nilai dengan indeks terakhir setelah dihapus: " . $LastValue . "<br>";
-?>
+?> 

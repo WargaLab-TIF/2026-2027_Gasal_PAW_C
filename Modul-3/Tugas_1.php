@@ -9,4 +9,4 @@ echo "fruits = (\"" . implode("\", \"", $fruits) . "\")<br>";
 // Menampilkan nilai dengan indeks tertinggi (indeks terakhir)
 $highestIndex = count($fruits) - 1;
 echo "Nilai dengan indeks tertinggi: " . $fruits[$highestIndex] . "<br>";
-?>
+?> 

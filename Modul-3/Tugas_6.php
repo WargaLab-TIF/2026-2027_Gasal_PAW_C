@@ -10,4 +10,4 @@ echo implode(", ", $temp) . ")<br>";
 $keys = array_keys($weight);
 $secondKey = $keys[1];
 echo "Data kedua: " . $weight[$secondKey] . "<br>";
-?>
+?> 

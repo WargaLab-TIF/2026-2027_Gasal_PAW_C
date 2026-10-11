@@ -10,4 +10,4 @@ for($i = 0; $i < $length; $i++) {
     $w = $weight[$name];
     echo $name . " is " . $w . " kg.<br>";
 }
-?>
+?> 

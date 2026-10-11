@@ -5,4 +5,4 @@ $height += ["David"=>"180", "Ethan"=>"172", "Frank"=>"168", "George"=>"175", "Ha
 foreach($height as $k => $v) {
     echo $k . " is " . $v . " cm tall.<br>";
 }
-?>
+?> 

@@ -14,4 +14,4 @@ echo "Panjang array saat ini: " . $panjang_array . "<br>";
 for($x = 0; $x < $panjang_array; $x++) {
     echo $fruits[$x]. "<br>";
 }
-?>
+?> 

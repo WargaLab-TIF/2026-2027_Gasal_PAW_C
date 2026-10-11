@@ -49,4 +49,4 @@ echo "Hasil arsort: "; foreach($arr8 as $k=>$v) echo "$k=>$v, "; echo "<br>";
 $arr8 = array("Peter"=>35, "Ben"=>37, "Joe"=>43); // reset
 krsort($arr8);
 echo "Hasil krsort: "; foreach($arr8 as $k=>$v) echo "$k=>$v, "; echo "<br>";
-?>
+?> 
