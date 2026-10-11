@@ -1,0 +1,85 @@
+<?php 
+$Huruf = array("A");
+echo "Array Awal : ";
+print_r($Huruf);
+echo "<br>";
+array_push($Huruf, "B");
+echo "Hasil Array_push : ";
+print_r($Huruf);
+echo "<br>";
+echo "<br>";
+
+echo "Array Awal : ";
+print_r($Huruf);
+$Huruf1 = array("C");
+$Huruf = array_merge($Huruf,$Huruf1);
+echo " Digabung dengan : " ;
+print_r($Huruf1);
+echo "<br>";
+echo "Hasil Array_merge : ";
+print_r($Huruf);
+echo "<br>";
+echo "<br>";
+
+$Math = array("x" => 1, "y" => 2);
+echo "Array Awal : ";
+print_r($Math);
+echo "<br>";
+$hasil = array_values($Math);
+echo "Hasil Array_values : ";
+print_r($hasil);
+echo "<br>";
+echo "<br>";
+echo "Mencari \"B\" pada array : ";
+print_r($Huruf);
+echo "<br>";
+echo "Hasil array_search ; ";
+echo array_search("B", $Huruf);
+echo "<br>";
+echo "<br>";
+
+$Acak = array(0,1,false,2,"",3,"array");
+echo "Array Awal : ";
+print_r($Acak);
+array_filter($Acak);
+echo "<br>";
+echo "Hasil array_filter : " ;
+print_r(array_values(array_filter($Acak)));
+echo "<br>";
+echo "<br>";
+
+$Angka = array(3,2,1);
+echo "Array Awal : ";
+print_r($Angka);
+echo "<br>";
+sort($Angka);
+echo "Hasil sort : ";
+print_r($Angka);
+echo "<br>";
+rsort($Angka);
+echo "Hasil rsort : ";
+print_r($Angka);
+echo "<br>";
+echo "<br>";
+
+$weight = array("Peter" => 35, "Ben" => 37, "Joe" => 43);
+echo "Array Awal : ";
+print_r($weight);
+echo "<br>";
+asort($weight);
+echo "Hasil asort : ";
+print_r($weight);
+echo "<br>";
+ksort($weight);
+echo "Hasil ksort : ";
+print_r($weight);
+echo "<br>";
+arsort($weight);
+echo "Hasil arsort : ";
+print_r($weight);
+echo "<br>";
+krsort($weight);
+echo "Hasil krsort : ";
+print_r($weight);
+echo "<br>";
+?>
