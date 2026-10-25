@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Data Pribadi</title>
+</head>
+<body>
+  <h2>Register</h2>
+  <fieldset>
+    <legend>Person Details</legend>
+    <form name="myForm" action="processData.php" method="POST" novalidate>
+      <table>
+        <tr>
+          <td><label for="surname">Surname</label></td>
+          <td><input type="text" id="surname" name="surname" size="31"></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email address</label></td>
+          <td><input type="email" id="email" name="email" size="31"></td>
+        </tr>
+        <tr>
+          <td><label for="password">Password</label></td>
+          <td><input type="password" id="password" name="password" size="31"></td>
+        </tr>
+        <tr>
+          <td><label for="address">Street Address</label></td>
+          <td><textarea id="address" name="address" cols="30" rows="3"></textarea></td>
+        </tr>
+        <tr>
+          <td><label for="state">State</label></td>
+          <td>
+            <select id="state" name="state">
+              <option value="-1" selected>[choose your state]</option>
+              <option value="1">Australian Capital Territory</option>
+              <option value="2">Queensland</option>
+              <option value="3">Victoria</option>
+              <option value="4">New South Wales</option>
+              <option value="5">Tasmania</option>
+              <option value="6">South Australia</option>
+              <option value="7">Western Australia</option>
+              <option value="8">Northern Territory</option>
+            </select>
+            <input type="hidden" name="country" value="Australia">
+          </td>
+        </tr>
+        <tr>
+          <td><label>Gender</label></td>
+          <td>
+            <input type="radio" id="male" name="sex" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="sex" value="female">
+            <label for="female">Female</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="vegetarian">Vegetarian?</label></td>
+          <td><input type="checkbox" id="vegetarian" name="vegetarian" value="yes"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" value="Submit" name="submit">
+            <input type="reset" value="Reset" name="reset">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </fieldset>
+</body>
+</html>
