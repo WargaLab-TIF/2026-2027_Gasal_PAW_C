@@ -1,3 +1,4 @@
+<!-- soal 6.1 -->
 <?php
 // 1. array_push()
 $arr1 = array("A");
