@@ -1,0 +1,20 @@
+body { background: #fff; color: #555; padding-top: 20px; }
+h2.judul { color: #337ab7; font-weight: 400; margin-bottom: 5px; }
+.page-head { border-bottom: 1px solid #eee; padding-bottom: 12px; margin-bottom: 20px; overflow: hidden; }
+.page-head h2 { margin: 0; float: left; }
+.page-head .btn { float: right; }
+
+.table thead tr th { background: #d9edf7; color: #31708f; font-weight: 600; }
+
+/* tombol bergradien seperti contoh */
+.btn-success { background: linear-gradient(#7cb342, #5b9a24); border-color: #4f8a1e; }
+.btn-success:hover { background: #4f8a1e; }
+.btn-edit    { background: linear-gradient(#f57c00, #d35400); border-color: #c24e00; color: #fff; }
+.btn-edit:hover { background: #b84700; color: #fff; }
+.btn-danger  { background: linear-gradient(#d9363e, #b71c1c); border-color: #a31515; }
+.btn-danger:hover { background: #7f1010; }
+
+.form-horizontal .control-label { font-weight: 700; color: #333; }
+.form-wrap { max-width: 720px; margin: 30px auto 0; }
+.form-wrap .form-control { max-width: 420px; }
+.form-wrap .form-control.pendek { max-width: 260px; }
