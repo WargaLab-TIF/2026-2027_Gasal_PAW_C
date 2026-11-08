@@ -4,7 +4,7 @@ include 'koneksi.php';
 $data = get_transaksi($koneksi);
 if (isset($_POST['barang'])) {
     header("Location: barang.php");
-}
+} 
 ?>
 <!DOCTYPE html>
 <html lang="en">
