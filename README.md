@@ -27,6 +27,11 @@ Berikut adalah struktur folder yang akan kita gunakan dalam repository ini agar 
 │       ├── Tugas-2.php
 │       ├── other.php
 │       └── ...
+├── Modul-3/
+│   └── 25-000_Ismail_Bin_Mail/
+│       ├── Tugas-1.1.php
+│       ├── Tugas-1.2.php
+│       └── ...
 └── ...
 ```
 
