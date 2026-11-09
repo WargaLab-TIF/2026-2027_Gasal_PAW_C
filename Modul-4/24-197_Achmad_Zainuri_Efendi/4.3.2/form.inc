@@ -1,0 +1,49 @@
+<!-- NIM: 240411100197 -->
+<fieldset>
+    <legend>Person Details</legend>
+    <form name="myform" action="" method="POST">
+        <div class="field">
+            <label for="surname">Surname</label>
+            <input type="text" name="surname" size="31" value="<?php echo isset($_POST['surname']) ? htmlspecialchars($_POST['surname']) : ''; ?>" />
+        </div>
+        <div class="field">
+            <label for="email">Email address</label>
+            <input type="text" name="email" size="31" value="<?php echo isset($_POST['email']) ? htmlspecialchars($_POST['email']) : ''; ?>" />
+        </div>
+        <div class="field">
+            <label for="passwd">Password</label>
+            <input type="password" name="passwd" size="31" />
+        </div>
+        <div class="field">
+            <label for="address">Street Address</label>
+            <textarea name="address" rows="3" cols="22"><?php echo isset($_POST['address']) ? htmlspecialchars($_POST['address']) : ''; ?></textarea>
+        </div>
+        <div class="field">
+            <label for="state">State</label>
+            <select name="state">
+                <?php $state = isset($_POST['state']) ? $_POST['state'] : '-1'; ?>
+                <option value="-1" <?php if($state == '-1') echo 'selected'; ?>>[choose your state]</option>
+                <option value="1" <?php if($state == '1') echo 'selected'; ?>>Australian Capital Territory</option>
+                <option value="2" <?php if($state == '2') echo 'selected'; ?>>Queensland</option>
+            </select>
+        </div>
+        <div class="field">
+            <input type="hidden" name="country" value="Australia" />
+        </div>
+        <div class="field">
+            <label>Gender</label>
+            <?php $sex = isset($_POST['sex']) ? $_POST['sex'] : ''; ?>
+            <input type="radio" name="sex" value="male" <?php if($sex == 'male') echo 'checked'; ?> />Male
+            <input type="radio" name="sex" value="female" <?php if($sex == 'female') echo 'checked'; ?> />Female
+        </div>
+        <div class="field">
+            <label for="vegetarian">Vegetarian?</label>
+            <input type="checkbox" name="vegetarian" <?php if(isset($_POST['vegetarian'])) echo 'checked'; ?> />
+        </div>
+        <div class="field">
+            <label>&nbsp;</label>
+            <input type="submit" value="Submit" name="submit" />
+            <input type="reset" value="Reset" name="reset" />
+        </div>
+    </form>
+</fieldset>
