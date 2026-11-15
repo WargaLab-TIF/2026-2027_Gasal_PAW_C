@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 24px;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.5;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+h2 {
+    margin: 0 0 16px;
+    font-size: 1.3rem;
+    color: #0f172a;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+label {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+input[type="date"] {
+    display: block;
+    margin-top: 4px;
+    padding: 8px 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font: inherit;
+    font-size: 0.9rem;
+}
+
+button,
+.tombol-excel {
+    display: inline-block;
+    padding: 9px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #0284c7;
+    color: #ffffff;
+    font: inherit;
+    font-size: 0.9rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover,
+.tombol-excel:hover {
+    background-color: #0369a1;
+}
+
+.aksi {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.periode {
+    margin: 0 0 16px;
+    font-size: 0.9rem;
+    color: #475569;
+}
+
+.kosong {
+    color: #64748b;
+}
+
+.grafik {
+    position: relative;
+    width: 100%;
+    height: 340px;
+    margin-bottom: 24px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+    font-size: 0.9rem;
+}
+
+th,
+td {
+    padding: 9px 12px;
+    border: 1px solid #e2e8f0;
+    text-align: left;
+}
+
+th {
+    background-color: #f8fafc;
+    color: #475569;
+    font-weight: 600;
+}
+
+tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+.ringkasan {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.card {
+    flex: 1 1 220px;
+    padding: 14px 16px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+}
+
+.card-label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 0.8rem;
+    color: #64748b;
+}
+
+.card-nilai {
+    display: block;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+@media print {
+    @page {
+        size: A4 portrait;
+        margin: 12mm;
+    }
+
+    .no-print {
+        display: none !important;
+    }
+
+    body {
+        padding: 0;
+        background-color: #ffffff;
+    }
+
+    main {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        border: none;
+        box-shadow: none;
+    }
+
+    h2 {
+        margin-bottom: 8px;
+        font-size: 1.1rem;
+    }
+
+    .periode {
+        margin-bottom: 8px;
+    }
+
+    .grafik {
+        height: 340px;
+        margin-bottom: 8px;
+        break-inside: avoid;
+    }
+
+    table {
+        font-size: 0.8rem;
+    }
+
+    th,
+    td {
+        padding: 5px 8px;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr {
+        break-inside: avoid;
+    }
+
+    .ringkasan {
+        margin-top: 10px;
+        break-inside: avoid;
+    }
+
+    .card {
+        padding: 10px 12px;
+        background-color: #ffffff;
+        break-inside: avoid;
+    }
+
+    tbody tr:hover {
+        background-color: transparent;
+    }
+}
