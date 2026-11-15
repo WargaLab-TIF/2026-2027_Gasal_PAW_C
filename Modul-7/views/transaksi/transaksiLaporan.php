@@ -33,6 +33,7 @@ if (!empty($tglAwal) && !empty($tglAkhir)) {
     $stmt2->execute();
 
     $result2 = $stmt2->get_result();
+    
     $ringkasan = $result2->fetch_assoc();
 
     $jumlahPelanggan = $ringkasan['jumlah_pelanggan'] ?? 0;
