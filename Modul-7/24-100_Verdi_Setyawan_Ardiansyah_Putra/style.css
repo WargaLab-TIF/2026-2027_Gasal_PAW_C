@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.5;
+}
+
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 24px;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+h2 {
+    margin-bottom: 6px;
+    font-size: 1.4rem;
+    color: #0f172a;
+}
+
+.judul-laporan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 18px;
+}
+
+.judul-laporan p,
+.periode-laporan {
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+.tombol-laporan,
+.filter-tombol {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+a,
+button {
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: #0284c7;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-family: inherit;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+a:hover,
+button:hover {
+    background-color: #0369a1;
+}
+
+.form-filter {
+    display: flex;
+    align-items: end;
+    gap: 12px;
+    padding: 16px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+}
+
+.form-filter > div {
+    flex: 1;
+}
+
+.form-filter label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.form-filter input {
+    display: block;
+    width: 100%;
+    margin-top: 0;
+    padding: 9px 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+.tombol-reset {
+    background-color: #64748b;
+}
+
+.tombol-reset:hover {
+    background-color: #475569;
+}
+
+.pesan-error {
+    margin-top: 12px;
+    padding: 10px 12px;
+    color: #b91c1c;
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 6px;
+}
+
+.periode-laporan {
+    margin: 14px 0;
+}
+
+.subjudul-laporan {
+    margin: 22px 0 10px;
+    font-size: 1.05rem;
+    color: #1e293b;
+}
+
+.grafik-laporan {
+    position: relative;
+    height: 340px;
+    padding: 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+}
+
+.grafik-laporan p {
+    color: #64748b;
+}
+
+.tabel-laporan {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+    font-size: 0.9rem;
+}
+
+th,
+td {
+    padding: 10px 12px;
+    border: 1px solid #e2e8f0;
+    text-align: left;
+}
+
+th {
+    background-color: #f8fafc;
+    font-weight: 600;
+    color: #475569;
+}
+
+tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+.ringkasan-laporan {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin: 14px 0 24px;
+}
+
+.kotak-ringkasan {
+    padding: 16px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+}
+
+.kotak-ringkasan p {
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+.kotak-ringkasan h3 {
+    margin-top: 6px;
+    color: #0f172a;
+    font-size: 1.25rem;
+}
+
+@media (max-width: 700px) {
+    main {
+        margin: 12px;
+        padding: 16px;
+    }
+
+    .judul-laporan {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .form-filter {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .filter-tombol {
+        flex-wrap: wrap;
+    }
+
+    .ringkasan-laporan {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media print {
+    @page {
+        size: auto;
+        margin: 15mm;
+    }
+
+    body {
+        background: #ffffff;
+        color: #000000;
+        font-size: 11pt;
+    }
+
+    .no-print,
+    form,
+    .tombol-laporan {
+        display: none !important;
+    }
+
+    main {
+        max-width: none;
+        margin: 0;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .grafik-laporan {
+        height: 280px;
+        border: 1px solid #999999;
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    .ringkasan-laporan {
+        grid-template-columns: repeat(2, 1fr);
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    table {
+        font-size: 10pt;
+        page-break-inside: auto;
+    }
+
+    tr {
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    th,
+    td {
+        padding: 6px 8px;
+        color: #000000;
+        border: 1px solid #555555;
+    }
+}
